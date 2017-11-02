@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<script src="../javascripts/app.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <title>Node api tutorial</title>
+</head>
+<body>
+
+  <div id='app' ng-app='app' ng-controller='mainCtrl'>
+    <div class="homeworkForm">
+        <form id="addHomework" ng-submit="addHomework()">
+                <input type="text" ng-model="Title" value="" placeholder="Title">
+                <input type="text" ng-model="Description" value="" placeholder="Description">
+                <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <ul>
+      <li ng-repeat='item in homework' class='homework'>
+        <div class="homeworkTitle">{{ item.title }}</div>
+        <div class="howeworkDescription">{{ item.description }}</div>
+      </li>
+    </ul>
+
+  </div>
+</body>
+</html>
