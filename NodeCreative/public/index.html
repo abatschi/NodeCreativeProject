@@ -18,10 +18,13 @@
         </form>
     </div>
 
-    <ul>
+    <ul class="homeworkItem">
       <li ng-repeat='item in homework' class='homework'>
-        <div class="homeworkTitle">{{ item.title }}</div>
-        <div class="howeworkDescription">{{ item.description }}</div>
+	
+        <div class="homeworkTitle">
+		<img src="https://www.iconexperience.com/_img/o_collection_png/green_dark_grey/512x512/plain/folder_document.png" class="icon"/>
+	{{ item.title }}</div>
+        <div class="homeworkDescription">{{ item.description }}</div>
       </li>
     </ul>
 

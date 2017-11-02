@@ -6,3 +6,20 @@ body {
 a {
   color: #00B7FF;
 }
+
+.homeworkItem{
+	list-style:none;
+}
+
+.homeworkTitle{
+	font-weight:bold;
+	font-size:150%;
+}
+
+.homeworkDescription{
+	padding-left:5%;
+}
+
+.icon{
+	width:20px;
+}
