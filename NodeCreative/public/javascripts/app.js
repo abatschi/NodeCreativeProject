@@ -28,7 +28,7 @@ function mainCtrl ($scope, homeworkFetcher, $http) {
 			method: 'POST',
 			data: newItem
 		}).success(function (data, status, headers, config) {
-			
+			window.location = "/"
 		});
 	};
 };
